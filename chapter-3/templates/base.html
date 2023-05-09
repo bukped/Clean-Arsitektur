@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{.Title}}</title>
+</head>
+<body>
+	<header>
+		<h1>{{.Header}}</h1>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/products">Products</a></li>
+				<li><a href="/products/new">Add Product</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		{{template "content" .}}
+	</main>
+</body>
+</html>
